@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mp3 Player</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="item">
+            <div class="gana">GANA </div>
+            <div class="mp3"> MP3</div> <img class="musicicon"
+                src="https://cdn-icons-png.flaticon.com/512/3845/3845874.png" alt="music">
+            <img class="track" src="" alt="">
+            <div class="sname"></div>
+        </div>
+    </nav>
+    <main>
+        <div class="left background">
+            <div class="maincontaint">
+                <div class="head">
+                    <h2>Song List</h2>
+                    <img class="listicn" src="https://cdn-icons-png.flaticon.com/512/2099/2099125.png" alt="list Icon">
+                </div>
+                <center>
+                    <div class="underline"></div>
+                </center>
+                <div class="songs">
+
+                </div>
+
+            </div>
+        </div>
+        <div class="right background">
+            <center>
+                <div class="poster">
+                    <center>
+                        <img class="gifbg gif"
+                            src="https://cdn.pixabay.com/animation/2025/09/12/10/03/10-03-29-312__340.png" alt="">
+                        <img class="monkey gif"
+                            src="https://cdn.pixabay.com/animation/2025/01/30/03/05/03-05-06-386__340.png" alt="">
+                    </center>
+                </div>
+            </center>
+
+            <center>
+                <div class="player">
+
+                    <div class="controls">
+                        <i class="fa-solid fa-shuffle"></i>
+
+                        <i class="fa-solid fa-backward-step"></i>
+                        <div class="bb">
+                            <i class="fa-solid fa-pause play"></i>
+                        </div>
+
+                        <i class="fa-solid fa-forward-step"></i>
+
+                        <i class="fa-regular fa-message"></i>
+
+                        <div class="volume-box">
+
+                            <div class="volume-btn fa-solid fa-volume-high"></div>
+
+                            <input type="range" id="volume" min="0" max="1" step="0.01" value="1">
+
+                        </div>
+                    </div>
+
+                    <div class="progress-area">
+
+                        <span class="time current">--:--</span>
+
+                        <div class="range-box">
+                            <input class="range" type="range" value="0">
+                        </div>
+
+                        <span class="time total">--:--</span>
+
+                    </div>
+
+                </div>
+            </center>
+
+        </div>
+    </main>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
